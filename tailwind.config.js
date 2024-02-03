@@ -8,6 +8,7 @@ module.exports = {
         'ikea-black': 'rgb(17,17,17)',
         'vermillon-red': 'rgb(204, 0, 8)',
         'main-blue': 'rgb(0, 88, 163)',
+        'dark-blue': 'rgb(0, 79, 147)',
         'subtitle-gray': 'rgb(118,118,118)',
         'light-gray': 'rgb(245,245,245)',
       },

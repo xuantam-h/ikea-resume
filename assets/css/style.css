@@ -590,13 +590,12 @@ video {
   top: 0.25rem;
 }
 
-.m-auto {
-  margin: auto;
+.order-4 {
+  order: 4;
 }
 
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
+.m-auto {
+  margin: auto;
 }
 
 .my-3 {
@@ -658,6 +657,14 @@ video {
   margin-top: 1rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -668,6 +675,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.w-5 {
+  width: 1.25rem;
 }
 
 .w-\[17px\] {
@@ -690,8 +701,16 @@ video {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -700,6 +719,10 @@ video {
 
 .gap-0 {
   gap: 0px;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-5 {
@@ -739,14 +762,14 @@ video {
   background-color: rgb(17 17 17 / var(--tw-bg-opacity));
 }
 
-.bg-main-blue {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 88 163 / var(--tw-bg-opacity));
-}
-
 .bg-light-gray {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
+.bg-main-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 88 163 / var(--tw-bg-opacity));
 }
 
 .p-3 {
@@ -788,14 +811,14 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pt-4 {
@@ -893,12 +916,45 @@ video {
   content: none;
 }
 
+.rating svg{
+  margin:-.2rem;
+}
+
+.product-like-button{
+  width:2.5rem;
+  height:2.5rem;
+}
+
+.hover\:bg-dark-blue:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 79 147 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-dark-gray:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(72 72 72 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-gray-200:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 768px) {
+  .md\:order-none {
+    order: 0;
+  }
+
+  .md\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .md\:my-16 {
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -934,6 +990,10 @@ video {
 
   .md\:w-4\/5 {
     width: 80%;
+  }
+
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 
   .md\:px-8 {

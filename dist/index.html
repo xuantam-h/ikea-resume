@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <div class="alert-message bg-ikea-black text-center py-2.5">
+    <div class="alert-message bg-ikea-black text-center py-2.5 px-2">
         <p class="text-sm text-white font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
     </div>
     <div class="container m-auto px-5">
-        <header class="flex items-center py-5">
+        <header class="flex items-center justify-between flex-wrap md:flex-nowrap py-5">
             <img src="../assets/images/logo.svg" class="w-[90px]" alt="Logo IKEA">
-            <div class="search-bar flex items-center w-screen bg-gray-100 hover:bg-gray-200 p-3 mx-8 rounded-full">
+            <div class="search-bar order-4 md:order-none flex items-center w-screen bg-gray-100 hover:bg-gray-200 p-3 mt-5 md:mx-8 md:mt-0 rounded-full">
                 <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" class="svg-icon search-field__search-icon search-field__search-icon--show ml-1"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.98 15.395a6.294 6.294 0 111.414-1.414l4.602 4.601-1.414 1.414-4.602-4.601zm.607-5.101a4.294 4.294 0 11-8.587 0 4.294 4.294 0 018.587 0z" fill="currentColor"></path></svg>
                 <p class="text-gray-400 font-medium text-lg ml-2">Que cherchez-vous ?</p>
             </div>
-            <img src="../assets/images/heart.svg" class="w-[17px]" alt="Heart icon">
+            <button class="product-like-button flex items-center justify-center rounded-full hover:bg-gray-100">
+                <img src="../assets/images/heart.svg" class="w-[17px]" alt="Heart icon">
+            </button>
         </header>
         <main>
             <div class="breadcrumb border-t border-slate-100 pt-4 mb-4 md:mb-16">
-                <ul class="flex items-center text-xs text-ikea-black">
+                <ul class="flex flex-wrap items-center text-xs text-ikea-black">
                     <li>IKEA</li>
                     <li>Strasbourg</li>
                     <li>Collaborateurs</li>
@@ -65,11 +67,11 @@
                                 <span class="underline">140x200 cm</span>
                             </h2>
                         </div>
-                        <button class="product-like-button">
+                        <button class="product-like-button flex items-center justify-center rounded-full hover:bg-gray-100">
                             <img src="../assets/images/heart.svg" class="w-[17px]" alt="Heart icon">
                         </button>
                     </div>
-                    <p class="price relative font-bold text-3xl">000<span class="currency text-sm absolute top-1">€</span></p>
+                    <p class="price relative font-bold text-3xl">0.00<span class="currency text-sm absolute top-1">€</span></p>
                     <p class="price-info text-xs text-dark-gray mt-2 mb-0.5">Ancien prix: 159€</p>
                     <p class="price-info text-xs text-dark-gray">Prix valable depuis le 28 août 2023</p>
                     <div class="rating flex items-center my-3 gap-0">
@@ -78,19 +80,27 @@
                         <svg focusable="false" viewBox="0 0 24 24" width="24" height="24" class="pip-svg-icon pip-rating__star pip-rating__star--filled" aria-hidden="true"><path d="m11.9999 6 2.1245 3.6818 4.1255.9018-2.8125 3.1773L15.8626 18l-3.8627-1.7182L8.1372 18l.4252-4.2391-2.8125-3.1773 4.1255-.9018L11.9999 6z"></path></svg>
                         <svg focusable="false" viewBox="0 0 24 24" width="24" height="24" class="pip-svg-icon pip-rating__star pip-rating__star--filled" aria-hidden="true"><path d="m11.9999 6 2.1245 3.6818 4.1255.9018-2.8125 3.1773L15.8626 18l-3.8627-1.7182L8.1372 18l.4252-4.2391-2.8125-3.1773 4.1255-.9018L11.9999 6z"></path></svg>
                         <svg focusable="false" viewBox="0 0 24 24" width="24" height="24" class="pip-svg-icon pip-rating__star pip-rating__star--filled" aria-hidden="true"><path d="m11.9999 6 2.1245 3.6818 4.1255.9018-2.8125 3.1773L15.8626 18l-3.8627-1.7182L8.1372 18l.4252-4.2391-2.8125-3.1773 4.1255-.9018L11.9999 6z"></path></svg>
-                        <span class="ml-2">(383)</span>
+                        <span class="ml-2">(0)</span>
                     </div>
                     <div class="product-more-info flex items-center my-6">
                         <svg focusable="false" viewBox="0 0 24 24" width="24" height="17" class="pip-svg-icon pip-sold-separately__icon w-[17px]" aria-hidden="true"><path d="M12 9.5c.6904 0 1.25-.5596 1.25-1.25S12.6904 7 12 7s-1.25.5596-1.25 1.25S11.3096 9.5 12 9.5zM11 11v6h2v-6h-2z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.4771 2 2 6.4771 2 12c0 5.5228 4.4771 10 10 10 5.5228 0 10-4.4772 10-10 0-5.5229-4.4772-10-10-10zM4 12c0-4.4183 3.5817-8 8-8s8 3.5817 8 8-3.5817 8-8 8-8-3.5817-8-8z"></path></svg>
                         <p class="text-sm text-dark-gray ml-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <button class="bg-main-blue font-bold text-white mt-4 py-4 px-9 rounded-full">Télécharger mon CV</button>
+                    <button class="bg-main-blue hover:bg-dark-blue font-bold text-white mt-4 py-4 px-9 rounded-full">Télécharger mon CV</button>
                 </div>
             </section>
         </main>
     </div>
-    <footer class="bg-light-gray text-dark-gray text-center py-6">
-        <p>Réalisé par Xuan-Tam Hoang</p>
+    <footer class="flex items-center justify-center gap-5 bg-light-gray text-dark-gray text-center text-sm py-6 mt-6">
+        <p>Réalisé par Xuan-Tam H.</p>
+        <div class="social-links flex items-center gap-3">
+            <a href="https://github.com/xuantam-h" target="_blank">
+                <img src="../assets/images/github.svg" class="w-5" alt="GitHub icon">
+            </a>
+            <a href="https://www.linkedin.com/in/xuantam-hoang/" target="_blank">
+                <img src="../assets/images/linkedin.svg" class="w-5" alt="LinkedIn icon">
+            </a>
+        </div>
     </footer>
 </body>
 </html>
