@@ -11,6 +11,7 @@ module.exports = {
         'dark-blue': 'rgb(0, 79, 147)',
         'subtitle-gray': 'rgb(118,118,118)',
         'light-gray': 'rgb(245,245,245)',
+        'hover-gray': 'rgb(223,223,223)',
       },
     },
   },
