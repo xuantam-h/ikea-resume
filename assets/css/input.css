@@ -33,3 +33,26 @@
     width:2.5rem;
     height:2.5rem;
 }
+
+.testimonials{
+    display: flex;
+    align-items: center;
+}
+
+.testimonials > div{
+    flex:1;
+}
+
+.testimonials-img{
+    width: 31.25rem;
+    height: 31.25rem;
+}
+
+.testimonials-img img{
+    object-fit: cover;
+    object-position: center;
+}
+
+.line-through{
+    text-decoration-line: line-through;
+}

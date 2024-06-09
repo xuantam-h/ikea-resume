@@ -1044,3 +1044,54 @@ video {
     line-height: 2rem;
   }
 }
+
+.testimonials-img{
+  width: auto;
+  height: auto;
+}
+
+.testimonials-img img{
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  transform: scaleX(-1);
+  width: 100%;
+}
+
+.testimonials-inner{
+  padding: 2rem;
+  transform: translateX(-5%);
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.testimonials-author{
+  display: block;
+  margin-top: .5rem;
+}
+
+.line-through{
+  text-decoration-line: line-through;
+  text-decoration-thickness: 0.2rem;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+@media all and (min-width:48em){
+  .testimonials-img{
+    width: 31.25rem;
+    height: 31.25rem;
+  }
+
+  .testimonials{
+    display: flex;
+    align-items: center;
+  }
+  
+  .testimonials > div{
+    flex:1;
+  }
+}
