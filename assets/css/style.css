@@ -1054,7 +1054,6 @@ video {
   object-fit: cover;
   object-position: center;
   height: 100%;
-  transform: scaleX(-1);
   width: 100%;
 }
 
